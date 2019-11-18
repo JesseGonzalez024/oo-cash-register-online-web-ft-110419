@@ -29,10 +29,8 @@ class CashRegister
     @item
   end
   def void_last_transaction
-    @total -= @trasanction.pop
-    if @trasanction.size == 0 
-      @trasanction.clear
-      @trasanction << 0.0
+    self.total = @total -= @trasanction.pop
+    
     end
   end
 
