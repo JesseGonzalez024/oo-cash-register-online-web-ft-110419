@@ -6,9 +6,11 @@ class CashRegister
     @total = 0
     @discount = discount
     @item = []
+    @trasanction = []
   end
   def add_item (title, price, quantity = 1)
     @total += price * quantity
+    @trasanction << price
     i = quantity
     until i == 0 do 
       @item << title
@@ -27,7 +29,7 @@ class CashRegister
     @item
   end
   def void_last_transaction
-  
+    
   end
 
 end
