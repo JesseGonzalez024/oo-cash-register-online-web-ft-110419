@@ -30,6 +30,9 @@ class CashRegister
   end
   def void_last_transaction
     @total -= @trasanction.pop
+    if @trasanction.size == 0 
+      @trasanction.clear
+      @trasanction << 0.0
   end
 
 end
