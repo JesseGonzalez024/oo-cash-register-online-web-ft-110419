@@ -33,6 +33,7 @@ class CashRegister
     if @trasanction.size == 0 
       @trasanction.clear
       @trasanction << 0.0
+    end
   end
 
 end
