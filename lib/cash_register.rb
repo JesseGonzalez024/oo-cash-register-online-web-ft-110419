@@ -11,6 +11,8 @@ class CashRegister
     title
   end
   def apply_discount
+    if @discount == 0
+      
     self.total -= (@discount * 0.01 * @total).to_i 
     return "After the discount, the total comes to $#{self.total}."
     
